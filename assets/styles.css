@@ -1,0 +1,222 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #ffffff;
+  color: black;
+}
+
+/* Header */
+header {
+  width: 100%;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px;
+}
+header nav .submenu {
+  align-self: center;
+}
+header nav .submenu .links-carrito {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header nav .submenu .links-carrito .links-header {
+  margin: 0px 20px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  line-height: 16.44px;
+}
+header nav .submenu .links-carrito .btn-contactanos {
+  width: 129;
+  height: 32;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+header nav .submenu .links-carrito .carrito {
+  position: relative;
+}
+header nav .submenu .links-carrito .carrito .cantidad {
+  height: 15px;
+  width: 20px;
+  background-color: #FFBA60;
+  border-radius: 40%;
+  color: white;
+  font-style: 400;
+  text-align: center;
+  font-size: 10px;
+  line-height: 13px;
+  position: absolute;
+  top: -5px;
+  right: -15px;
+}
+
+@media screen and (max-width: 767px) {
+  header nav .submenu .links-carrito .links-header {
+    display: none;
+  }
+}
+/* Productos */
+.productos {
+  width: 960px;
+  height: 751px;
+}
+.productos h2 {
+  margin-top: 81px;
+  font-family: "Abril Fatface", cursive;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43.17px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+.productos .productos-contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.productos .productos-contenedor .producto {
+  margin-top: 215px;
+  margin-bottom: 95px;
+  height: 239px;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0px 28px 64px 12px rgba(0, 0, 0, 0.1215686275);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.productos .productos-contenedor .producto .producto-superior {
+  position: absolute;
+  top: -110px;
+}
+.productos .productos-contenedor .producto .producto-superior .producto-img {
+  margin: 20px;
+  width: 205px;
+  height: 165.86px;
+}
+.productos .productos-contenedor .producto .producto-superior .separador {
+  border-bottom-style: dashed;
+  border-bottom-color: #DBDBDB;
+  border-bottom-width: 2px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.productos .productos-contenedor .producto .producto-inferior {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+}
+.productos .productos-contenedor .producto .producto-inferior .producto-nombre {
+  font-family: Abril Fatface;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+.productos .productos-contenedor .producto .producto-inferior .producto-categorias {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.productos .productos-contenedor .producto .producto-inferior .producto-categorias .producto-detalles {
+  font-family: Raleway;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+.productos .productos-contenedor .producto .producto-inferior .producto-categorias .punto-separador {
+  background-color: #000000;
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+}
+.productos .productos-contenedor .producto .producto-inferior .precios-carrito {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+}
+.productos .productos-contenedor .producto .producto-inferior .precios-carrito .producto-precio {
+  border: 1px solid #000000;
+  border-radius: 8px;
+  width: 161px;
+  height: 36px;
+  padding-top: 6px;
+}
+.productos .productos-contenedor .producto .producto-inferior .precios-carrito .img-carrito {
+  height: 36px;
+  width: 35px;
+  background-color: #000000;
+  border-radius: 8px;
+  padding-top: 6px;
+}
+.productos .productos-contenedor .producto .producto-inferior .precios-carrito .img-carrito .producto-carrito {
+  height: 22px;
+  width: 21px;
+}
+.productos .mas {
+  width: 100%;
+  text-align: -webkit-center;
+  margin-bottom: 50px;
+}
+.productos .mas a {
+  text-decoration: none;
+  color: #fff;
+}
+.productos .mas .ver-mas {
+  background: #000000;
+  border-radius: 8px;
+  color: #fff;
+  width: 129px;
+  height: 32px;
+  text-align: center;
+  padding-top: 6px;
+}
+.productos .mas .ver-mas a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .productos .productos-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .productos .productos-contenedor .producto {
+    margin-top: 0px;
+  }
+
+  .productos h2 {
+    margin-bottom: 150px;
+    font-size: 24px;
+  }
+}/*# sourceMappingURL=styles.css.map */
