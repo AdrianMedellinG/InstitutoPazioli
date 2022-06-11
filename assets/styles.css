@@ -577,6 +577,7 @@ footer .footer-flex .footer-items .redes-sociales .logo-redes {
 
 footer .footer-flex .footer-items .footer-info {
   margin-bottom: 30px;
+  font-weight: 600;
 }
 
 footer .footer-flex .footer-items .footer-info .titulo-links {
@@ -597,6 +598,11 @@ footer .footer-flex .footer-items .footer-info ul .links-footer {
 footer .footer-flex .footer-items .footer-info ul .links-footer a {
   text-decoration: none;
   color: #000;
+}
+
+footer .footer-flex .footer-items .copyright {
+  font-family: Raleway;
+  font-weight: 300;
 }
 
 footer .devkoore {
@@ -817,6 +823,7 @@ footer .devkoore {
 }
 
 .contactanos {
+  position: relative;
   padding: 32px;
   height: auto;
   max-width: 100%;
@@ -832,12 +839,25 @@ footer .devkoore {
           align-items: center;
   background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(rgba(255, 255, 255, 0.35)));
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.35) 100%);
-  background-image: url(/assets/imagenes/contactanos_background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: .6;
-  /*width: 320px;
-    height: 870px;*/
+}
+
+.contactanos .contactanos-fondo {
+  -o-object-fit: contain;
+     object-fit: contain;
+  overflow: hidden;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+.contactanos .contactanos-fondo img {
+  height: 100%;
+  width: 100%;
 }
 
 .contactanos h2 {
@@ -852,9 +872,12 @@ footer .devkoore {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
   letter-spacing: 0.05em;
   color: #000000;
+  margin-bottom: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contactanos p {

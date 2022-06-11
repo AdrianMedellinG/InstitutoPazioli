@@ -488,7 +488,7 @@ footer {
 
             .footer-info {
                 margin-bottom: 30px;
-
+                font-weight: 600;
                 .titulo-links {
                     font-family: $abril;
                     font-size: 20px;
@@ -509,6 +509,11 @@ footer {
                     }
                 }
             }
+            .copyright
+            {
+                font-family: $raleway;
+                font-weight: 300;
+            }           
         }
     }
 
@@ -688,6 +693,7 @@ footer {
     }
 }
 .contactanos {
+    position: relative;
     padding: 32px;
     height: auto;
     max-width: 100%;
@@ -695,13 +701,23 @@ footer {
     flex-direction: column;
     align-items: center;    
     background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.35) 100%);
-    background-image: url(/assets/imagenes/contactanos_background.png);
+    //background-image: url(/assets/imagenes/contactanos_background.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    opacity: .6;
-    /*width: 320px;
-    height: 870px;*/
-   
+    background-size: cover;    
+    .contactanos-fondo {        
+        object-fit: contain;
+        overflow: hidden;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
     h2 {
         font-family: 'Abril Fatface';
         font-style: normal;
@@ -710,9 +726,10 @@ footer {
         line-height: 32px;
         display: flex;
         align-items: center;
-        text-align: center;
         letter-spacing: 0.05em;
         color: #000000;
+        margin-bottom: 20px;
+        justify-content: center;
     }
     p {
         font-family: 'Raleway';
